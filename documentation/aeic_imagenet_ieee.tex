@@ -203,12 +203,12 @@ quality setting (Pillow/libjpeg, quality 1) and evaluated identically (last row 
 Table~\ref{tab:results}).
 
 \begin{table}[t]
-\caption{AEIC-SE on 500 ImageNet-1k validation images (shorter side $\geq$ 256\,px), ordered by
-increasing bitrate, plus a JPEG baseline at its lowest quality setting. PSNR in dB; KID is the
-mean of the unbiased estimate (subset size 50).}
+\caption{AEIC-SE on 500 ImageNet-1k validation images (shorter side $\geq$ 256\,px), ordered by increasing bitrate, plus a JPEG baseline at its lowest quality setting. PSNR in dB; KID is the mean of the unbiased estimate (subset size 50).}
 \label{tab:results}
 \centering
-\small
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lccccccc}
 \toprule
 ckpt & bpp & PSNR & MS-SSIM & LPIPS & DISTS & FID & KID \\
@@ -222,8 +222,8 @@ ft2  & 0.0431 & 21.75 & 0.825 & 0.157 & 0.106 & 26.5 & $-0.0002$ \\
 JPEG$_{q=1}$ & 0.1915 & 21.07 & 0.809 & 0.547 & 0.411 & 151.5 & 0.0651 \\
 \bottomrule
 \end{tabular}
+}
 \end{table}
-
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{rd_curves_imagenet.png}
