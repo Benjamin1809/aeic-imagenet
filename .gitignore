@@ -1,0 +1,15 @@
+# local-only artifacts (not part of the submission)
+AEIC_ImageNet_Colab_from_colab_backup.ipynb
+AEIC_ImageNet_Colab.ipynb - Colab.pdf
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.nav
+*.snm
+*.toc
+*.synctex.gz
+
+# build tooling (kept locally, not part of the submission)
+make_notebook.py
