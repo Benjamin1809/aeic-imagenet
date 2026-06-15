@@ -13,3 +13,4 @@ AEIC_ImageNet_Colab.ipynb - Colab.pdf
 
 # build tooling (kept locally, not part of the submission)
 make_notebook.py
+results/make_slide_curves.py

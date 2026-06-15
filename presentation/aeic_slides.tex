@@ -112,11 +112,12 @@
     JPEG$_{q=1}$ & 0.1915 & 21.07 & 0.809 & 0.547 & 0.411 & 151.5 & 0.0651\\
     \bottomrule
   \end{tabular}}
-  \smallskip
 
-  \includegraphics[width=.62\linewidth]{rd_curves_imagenet.png}
+  \vfill
+  \includegraphics[width=\linewidth]{rd_curves_slide.png}
 
-  \tiny full 5-point table in the report
+  \vfill
+  {\tiny smaller ft number = more bits = better; full 5-point, 7-metric figure in the report}
 \end{frame}
 
 % ---------- Slide 9 ----------
@@ -160,7 +161,7 @@
           (faces/text); video extension.
   \end{itemize}
   \medskip
-  \textbf{Conclusion}: AEIC runs on ImageNet-1k with only 3 minor code changes and keeps its
+  \textbf{Conclusion}: AEIC runs on ImageNet-1k with only 5 minor code changes and keeps its
   rate--distortion--perception behaviour on unseen data — supporting the claim that at ultra-low
   bitrates a 0.94M-parameter encoder is enough when paired with a one-step diffusion decoder.
 \end{frame}
